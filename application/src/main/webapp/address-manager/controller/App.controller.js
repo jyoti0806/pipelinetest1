@@ -9,7 +9,9 @@ sap.ui.define([
     return Controller.extend("sap.ui.demo.addressmgr.controller.App", {
         viewModelName: "appView",
 
-        onInit: function () {},
+        onInit: function () {
+        	
+        },
 
         _loadMainModel: function () {
             var that = this;
