@@ -75,12 +75,6 @@
 				"viewPath": "sap.ui.demo.addressmgr.view",
 				"controlId": "idAppControl",
 				"controlAggregation": "detailPages",
-				"bypassed": {
-					"target": [
-						"master",
-						"notFound"
-					]
-				},
 				"async": true
 			},
 

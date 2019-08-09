@@ -1,22 +1,15 @@
 "use strict";
 
 sap.ui.define([
-    "sap/ui/demo/addressmgr/controller/BaseController",
+	"sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
     "sap/ui/demo/addressmgr/model/MessageType",
     "sap/ui/demo/addressmgr/service/businessPartner"
-], function (BaseController, JSONModel, MessageType, businessPartnerService) {
-    return BaseController.extend("sap.ui.demo.addressmgr.controller.App", {
+], function ( Controller,JSONModel, MessageType, businessPartnerService) {
+    return Controller.extend("sap.ui.demo.addressmgr.controller.App", {
         viewModelName: "appView",
 
-        onInit: function () {
-            this.setViewModel(new JSONModel({
-                busy: true
-            }));
-            this._loadMainModel();
-            // apply content density mode to root view
-            this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-        },
+        onInit: function () {},
 
         _loadMainModel: function () {
             var that = this;
