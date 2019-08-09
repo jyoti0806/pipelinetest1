@@ -1,0 +1,12 @@
+<mvc:View
+	controllerName="sap.ui.demo.addressmgr.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	busy="{appView>/busy}"
+	xmlns="sap.m">
+	<App>
+		<Page>
+			<Label text="Hello World"></Label>
+		</Page>
+	</App>
+</mvc:View>
